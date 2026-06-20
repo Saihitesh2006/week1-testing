@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}CU Consortium — Quiet help between credit unions{% endblock %}
+
+{% block content %}
+<section class="bg-white px-4 sm:px-6 py-16 sm:py-20">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="inline-flex items-center gap-2 rounded-full bg-[#EDEDF9] text-requester-dark px-4 py-1.5 text-xs font-semibold mb-8">
+      <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>
+      Secure Institutional Network
+    </p>
+
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-ink leading-tight">
+      Quiet help between<br>
+      <span class="text-requester-dark">credit unions</span>
+    </h1>
+
+    <p class="mt-6 text-lg text-body leading-relaxed max-w-xl mx-auto">
+      Small credit unions ask for help anonymously. Larger credit unions offer support anonymously.
+      Identities are revealed only when both sides agree.
+    </p>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="/dashboard"
+         class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl bg-requester text-[#EEEFFF] text-sm font-medium hover:bg-blue-700 transition shadow-sm">
+        Verify Your Credit Union
+        <svg class="w-3 h-4" fill="currentColor" viewBox="0 0 8 12" aria-hidden="true">
+          <path d="M1.5 0L0 1.5 4.5 6 0 10.5 1.5 12 7.5 6z"/>
+        </svg>
+      </a>
+      <a href="#how-it-works"
+         class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-xl border border-border text-sm font-medium text-ink hover:bg-slate-50 transition">
+        See How It Works
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="bg-surface px-4 sm:px-6 py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-semibold text-ink tracking-tight">Built for Institutional Trust</h2>
+      <p class="mt-2 text-body">Our core principles ensure your privacy and focus.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <article class="bg-white border border-border rounded-2xl p-8 shadow-sm">
+        <div class="w-12 h-12 rounded-lg bg-requester/10 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-requester-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-ink mb-3">Anonymous Until Consent</h3>
+        <p class="text-body leading-relaxed">
+          Stay anonymous until both parties choose to reveal. Your institutional reputation is protected at every stage of the interaction.
+        </p>
+      </article>
+
+      <article class="bg-white border border-border rounded-2xl p-8 shadow-sm">
+        <div class="w-12 h-12 rounded-lg bg-requester/10 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-requester-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-ink mb-3">Introductions Only</h3>
+        <p class="text-body leading-relaxed">
+          No transactions, fees, commissions, or money movement on the platform. We are purely a bridge for knowledge and support sharing.
+        </p>
+      </article>
+
+      <article class="bg-white border border-border rounded-2xl p-8 shadow-sm">
+        <div class="w-12 h-12 rounded-lg bg-shared/10 flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-shared" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-ink mb-3">Credit-Union Only</h3>
+        <p class="text-body leading-relaxed">
+          Every institution is verified before participating. Join a closed ecosystem where everyone understands the unique challenges of credit unions.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="what-it-is-not" class="bg-white px-4 sm:px-6 py-16 sm:py-20 border-t border-border">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <article class="rounded-2xl border border-border bg-surface p-8">
+      <h2 class="text-xl font-semibold text-shared mb-4">What it is</h2>
+      <ul class="space-y-3 text-body text-sm leading-relaxed">
+        <li class="flex gap-3"><span class="text-shared font-bold">✓</span> A verified, CU-only introduction layer</li>
+        <li class="flex gap-3"><span class="text-shared font-bold">✓</span> Anonymous request, offer, chat, and reveal workflow</li>
+        <li class="flex gap-3"><span class="text-shared font-bold">✓</span> Cooperative support for liquidity, expertise, and leadership</li>
+      </ul>
+    </article>
+    <article class="rounded-2xl border border-border bg-white p-8 shadow-sm">
+      <h2 class="text-xl font-semibold text-ink mb-4">What it is not</h2>
+      <ul class="space-y-3 text-body text-sm leading-relaxed">
+        <li class="flex gap-3"><span class="text-slate-400 font-bold">✕</span> A public directory or marketplace</li>
+        <li class="flex gap-3"><span class="text-slate-400 font-bold">✕</span> A transaction, lending, or payment system</li>
+        <li class="flex gap-3"><span class="text-slate-400 font-bold">✕</span> A vendor platform — introductions only, no fees</li>
+        <li class="flex gap-3"><span class="text-slate-400 font-bold">✕</span> Identity visible before both parties consent to reveal</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="how-it-works" class="bg-surface-muted border-y border-border px-4 sm:px-6 py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-semibold text-ink tracking-tight">The Matching Lifecycle</h2>
+      <p class="mt-2 text-body">Simple, secure, and entirely under your control.</p>
+    </div>
+
+    <div class="relative">
+      <div class="hidden lg:block absolute top-12 left-8 right-8 h-0.5 bg-border" aria-hidden="true"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+        <div class="flex flex-col items-center text-center">
+          <div class="relative z-10 w-24 h-24 rounded-full bg-white border-4 border-requester/20 flex items-center justify-center shadow-md mb-4">
+            <svg class="w-7 h-7 text-requester-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-ink mb-2">Request</h3>
+          <p class="text-sm text-body">Post a need anonymously to the network.</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="relative z-10 w-24 h-24 rounded-full bg-white border-4 border-helper/20 flex items-center justify-center shadow-md mb-4">
+            <svg class="w-7 h-7 text-helper" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-ink mb-2">Offer</h3>
+          <p class="text-sm text-body">Larger unions offer resources or guidance.</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="relative z-10 w-24 h-24 rounded-full bg-white border-4 border-border flex items-center justify-center shadow-md mb-4">
+            <svg class="w-7 h-7 text-body" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.18-6.24.524-1.607.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-ink mb-2">Talk</h3>
+          <p class="text-sm text-body">Discuss the potential fit via secure portal.</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="relative z-10 w-24 h-24 rounded-full bg-white border-4 border-shared/20 flex items-center justify-center shadow-md mb-4">
+            <svg class="w-7 h-7 text-shared" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-ink mb-2">Reveal</h3>
+          <p class="text-sm text-body">Identities unveiled only by mutual consent.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-4 sm:px-6 py-16 sm:py-20">
+  <div class="max-w-5xl mx-auto relative overflow-hidden rounded-[2rem] bg-requester px-6 sm:px-16 py-14 sm:py-16 text-center">
+    <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-white/10 blur-3xl" aria-hidden="true"></div>
+    <div class="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-white/10 blur-3xl" aria-hidden="true"></div>
+
+    <div class="relative">
+      <h2 class="text-3xl sm:text-5xl font-bold text-[#EEEFFF] tracking-tight">Ready to join the consortium?</h2>
+      <p class="mt-4 text-lg text-[#EEEFFF]/90 max-w-2xl mx-auto">
+        Protect your institution's future through collaboration. Start the verification process today.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/dashboard"
+           class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-requester-dark text-sm font-medium hover:bg-slate-50 transition shadow-lg">
+          Verify Your Institution
+        </a>
+        <a href="/"
+           class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 rounded-xl border border-white/30 text-white text-sm font-medium hover:bg-white/10 transition">
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

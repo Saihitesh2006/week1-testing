@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}CU Consortium{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            requester: '#2563EB',
+            'requester-dark': '#004AC6',
+            helper: '#EA580C',
+            shared: '#10B981',
+            ink: '#191B23',
+            body: '#434655',
+            border: '#C3C6D7',
+            surface: '#FAF8FF',
+            'surface-muted': '#F3F3FE',
+            footer: '#E7E7F3',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-ink font-sans min-h-screen flex flex-col antialiased">
+  <header class="sticky top-0 z-50 bg-surface border-b border-border shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <a href="/" class="text-xl sm:text-2xl font-semibold text-requester-dark tracking-tight shrink-0">
+        CU Consortium
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="/#how-it-works" class="text-requester-dark border-b-2 border-requester-dark pb-1">How It Works</a>
+        <a href="/#features" class="text-body hover:text-ink transition">For Small CUs</a>
+        <a href="/#features" class="text-body hover:text-ink transition">For Large CUs</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+        <a href="/dashboard" class="hidden sm:inline-flex px-4 py-2 text-sm font-medium text-body hover:text-ink transition rounded-lg">
+          Sign In
+        </a>
+        <a href="/dashboard" class="inline-flex px-4 sm:px-6 py-2 text-sm font-medium rounded-lg bg-requester text-[#EEEFFF] hover:bg-blue-700 transition">
+          Verify Your CU
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="bg-footer border-t border-border mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2 max-w-sm">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-requester/10 flex items-center justify-center">
+              <svg class="w-4 h-4 text-requester-dark" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-semibold text-ink">CU Consortium</span>
+          </div>
+          <p class="text-sm text-body leading-relaxed">
+            The secure bridge between credit unions. Enabling anonymous collaboration for a stronger cooperative ecosystem.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-medium uppercase tracking-wider text-ink mb-3">Platform</h4>
+          <ul class="space-y-2 text-sm text-body">
+            <li><a href="/#how-it-works" class="hover:text-ink transition">How It Works</a></li>
+            <li><a href="/#features" class="hover:text-ink transition">Security</a></li>
+            <li><a href="/" class="hover:text-ink transition">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-medium uppercase tracking-wider text-ink mb-3">Legal</h4>
+          <ul class="space-y-2 text-sm text-body">
+            <li><a href="/" class="hover:text-ink transition">Privacy Policy</a></li>
+            <li><a href="/" class="hover:text-ink transition">Terms of Service</a></li>
+            <li><a href="/" class="hover:text-ink transition">Compliance</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-medium uppercase tracking-wider text-ink mb-3">Connect</h4>
+          <ul class="space-y-2 text-sm text-body">
+            <li><a href="/" class="hover:text-ink transition">Help Center</a></li>
+            <li><a href="/" class="hover:text-ink transition">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-body">
+        <p>© 2024 CU Consortium. All rights reserved.</p>
+        <p class="text-xs sm:text-sm">Confidential prototype · Fictional test data only</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
