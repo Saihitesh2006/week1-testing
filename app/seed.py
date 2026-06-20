@@ -50,6 +50,8 @@ def seed_credit_unions(session: Session) -> None:
 
 
 def seed() -> None:
+    if engine is None:
+        raise RuntimeError("DATABASE_URL is not configured; cannot seed.")
     init_db()
     with Session(engine) as session:
         seed_categories(session)
